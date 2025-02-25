@@ -399,4 +399,8 @@ async def handle_search(client, message):
 # ---------------------- RUN THE BOT ----------------------
 
 print("✅ Bot is running...")
-app.run()
+app.start()
+
+# Keep the process alive
+while True:
+    time.sleep(1)
