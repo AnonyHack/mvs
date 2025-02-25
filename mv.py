@@ -6,6 +6,8 @@ import time
 import os
 import asyncio
 import sqlite3
+import logging
+logging.basicConfig(level=logging.DEBUG)
 
 # ------------------------ CONFIGURATION ------------------------
 API_ID = os.getenv("API_ID")  # Name of the environment variable
