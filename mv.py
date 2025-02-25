@@ -10,6 +10,7 @@ import sqlite3
 API_ID = os.getenv("API_ID")  # Name of the environment variable
 API_HASH = os.getenv("API_HASH")  # Name of the environment variable
 BOT_TOKEN = os.getenv("BOT_TOKEN")  # Name of the environment variable
+ADMIN_USER_ID = int(os.getenv("ADMIN_USER_ID"))  # Get admin user ID from environment variables
 
 # Force Join Configuration
 CHANNEL_USERNAMES = ["@megahubbots", "@Freeinternetonly", "@Freenethubchannel", "@MunoFlix"]  # List of channel usernames
