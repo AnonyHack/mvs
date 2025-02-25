@@ -7,9 +7,9 @@ import asyncio
 import sqlite3
 
 # ------------------------ CONFIGURATION ------------------------
-API_ID = os.getenv("25753873") # Get this from https://my.telegram.org/apps
-API_HASH = os.getenv("3a5cdc2079cd76af80586102bd9761e2")
-BOT_TOKEN = os.getenv("7590478107:AAF-EJ8pVxfqSGMlpWj7Ros_vVnZytITCu4")
+API_ID = os.getenv("API_ID")  # Name of the environment variable
+API_HASH = os.getenv("API_HASH")  # Name of the environment variable
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # Name of the environment variable
 
 # Force Join Configuration
 CHANNEL_USERNAMES = ["@megahubbots", "@Freeinternetonly", "@Freenethubchannel", "@MunoFlix"]  # List of channel usernames
