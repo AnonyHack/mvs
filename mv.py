@@ -1,6 +1,7 @@
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import FloodWait
+from flask import Flask
 import time
 import os
 import asyncio
@@ -398,8 +399,20 @@ async def handle_search(client, message):
 
 # ---------------------- RUN THE BOT ----------------------
 
+# Create a Flask app
+web_app = Flask(__name__)
+
+@web_app.route("/")
+def home():
+    return "Bot is running!"
+
+# Start the bot
 print("✅ Bot is running...")
 app.start()
+
+# Run the web server
+if __name__ == "__main__":
+    web_app.run(host="0.0.0.0", port=10000)
 
 # Keep the process alive
 while True:
