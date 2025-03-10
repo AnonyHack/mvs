@@ -414,7 +414,7 @@ app.start()
 
 # Run the web server
 if __name__ == "__main__":
-    web_app.run(host="0.0.0.0", port=10000)
+    web_app.run(host="0.0.0.0", port=int(os.getenv("PORT", "10000")))
 
 # Keep the process alive
 while True:
